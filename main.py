@@ -111,6 +111,10 @@ def print_grid(g):
         print(line)
 
 
+def on_exit(window):
+    window.destroy()
+
+
 # create the grid and then add a one or a zero randomly to every cell
 grid = create_grid()
 for row in range(0, grid_size-1):
